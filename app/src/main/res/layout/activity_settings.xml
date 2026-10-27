@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسطير"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#111111"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="صانع الكيبورد: أبوجبل ابن الكوت"
+            android:textColor="#777777"
+            android:paddingBottom="14dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_enable"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="تفعيل الكيبورد"/>
+            <Button
+                android:id="@+id/btn_choose"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="اختيار الكيبورد"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="السرعة (1-500)"
+            android:paddingTop="14dp"
+            android:textColor="#333333"/>
+        <EditText
+            android:id="@+id/et_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="مثلاً 60"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عدد الأسطر بكل رسالة (1-90)"
+            android:paddingTop="10dp"
+            android:textColor="#333333"/>
+        <EditText
+            android:id="@+id/et_lines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="مثلاً 2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الفارزة (الفاصل بين الكلمات)"
+            android:paddingTop="10dp"
+            android:textColor="#333333"/>
+        <EditText
+            android:id="@+id/et_sep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="مسافة أو رمز"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="كلمة الافشار"
+            android:paddingTop="10dp"
+            android:textColor="#333333"/>
+        <EditText
+            android:id="@+id/et_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="كلمة الافشار"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="حفظ الإعدادات"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إضافة جملة (محمي)"
+            android:paddingTop="18dp"
+            android:textStyle="bold"
+            android:textColor="#111111"/>
+        <EditText
+            android:id="@+id/et_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="اكتب الجملة هنا"/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إضافة الجملة"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الجمل المحفوظة"
+            android:paddingTop="14dp"
+            android:textStyle="bold"
+            android:textColor="#111111"/>
+        <TextView
+            android:id="@+id/tv_sentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#444444"
+            android:paddingBottom="20dp"/>
+    </LinearLayout>
+</ScrollView>
